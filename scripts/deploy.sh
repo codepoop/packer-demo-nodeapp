@@ -5,7 +5,8 @@ apt-get install -y nginx nodejs npm
 groupadd node-demo
 useradd -m -d /app -s /bin/false -g node-demo node-demo
 
-mv /tmp/app /app
+ls -lrt /tmp/app
+mv -v /tmp/app /app
 chown -R node-demo:node-demo /app
 
 echo 'user www-data;
