@@ -6,7 +6,7 @@ groupadd node-demo
 useradd -m -d /app -s /bin/false -g node-demo node-demo
 
 ls -lrt /tmp/app
-mv -v /tmp/app /app
+mv -v /tmp/app/* /app
 chown -R node-demo:node-demo /app
 
 echo 'user www-data;
