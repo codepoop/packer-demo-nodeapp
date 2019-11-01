@@ -49,3 +49,5 @@ WantedBy=multi-user.target' > /etc/systemd/system/node-demo.service
 
 systemctl enable node-demo
 systemctl start node-demo
+
+sleep 10000000
