@@ -9,7 +9,7 @@
     "access_key": "{{user `aws_access_key`}}",
     "secret_key": "{{user `aws_secret_key`}}",
     "region": "us-east-1",
-    "source_ami": "ami-092546daafcc8bc0d",
+    "source_ami": "ami-09f9d773751b9d606",
     "subnet_id": "subnet-00a668364ed7168b8",
     "instance_type": "t2.micro",
     "ssh_username": "ubuntu",
