@@ -13,7 +13,15 @@
     "subnet_id": "subnet-09d3513304758a627",
     "instance_type": "t2.micro",
     "ssh_username": "ubuntu",
-    "ami_name": "packer-nodejs-{{timestamp}}"
+    "ami_name": "packer-nodejs-{{timestamp}}",
+    "launch_block_device_mappings": [
+    {
+      "device_name": "/dev/sda1",
+      "volume_size": 20,
+      "volume_type": "gp2",
+      "delete_on_termination": true
+    }
+  ]
   }],
   "provisioners": [
     {
