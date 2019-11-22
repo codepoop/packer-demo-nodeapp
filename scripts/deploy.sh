@@ -1,6 +1,5 @@
 #!/bin/bash
-apt-get update
-apt-get install -y nginx nodejs npm
+apt-get update && sleep 10 && apt-get update && sleep 10 &&  apt-get install -y nginx nodejs npm
 
 groupadd node-demo
 useradd -m -d /app -s /bin/false -g node-demo node-demo
